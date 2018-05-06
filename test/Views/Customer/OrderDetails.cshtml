@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewData["Title"] = "OrderDetails";
+}
+
+<h2>Order Details</h2>
+<hr size="30">
+<h3>Delivery Details</h3>
+
+<div align ="left" class="form-group row">
+    <div class="col-xs-3">
+        <label for="ex2">Contact Person</label>
+        <input align="right" class="form-control" id="ex2" type="text">
+        <label for="ex2">Delivery Address</label>
+        <input class="form-control" id="ex2" type="text">
+        <label for="ex2"></label>
+        <input class="form-control" id="ex2" type="text">
+        <form action="/action_page.php">
+            <input type="checkbox" name="Delivery" value="Personal Picking"> Personal Picking<br>
+            <input type="checkbox" name="Delivery" value="Courier" checked> Courier Delivery<br>
+        </form>
+    </div>
+    </div>
+<hr size="30">
+
+<h3>Payment Method</h3>
+<form action="/action_page.php">
+    <input type="checkbox" name="Payment" value="Credit Card"> Credit Card<br>
+    <input type="checkbox" name="Payment" value="Cash on delivery" checked> Cash on delivery<br>
+    <input type="checkbox" name="Payment" value="PayPal" checked>PayPal<br>
+</form>
+
+<hr size="30">
+
+<div style="overflow-y:hidden; overflow-x: hidden; height: 100px;">
+    <table align="right" class="table table-striped">
+        <thead>
+            <tr>
+                <th>ItemID</th>
+                <th>Product</th>
+                <th>Manufactured</th>
+                <th>Number</th>
+                <th>Total Cost</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>15123</td>
+                <td>Far Cry 5</td>
+                <td>Ubisoft</td>
+                <td>1</td>
+                <td>40$</td>
+    </table>
+</div>
+<a href="/Customer/PlaceOrder" class="btn btn-info">Place Order</a>
+

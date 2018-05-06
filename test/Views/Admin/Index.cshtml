@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<div class="container">
+
+    <br />
+    <br />
+
+    <h2>Admin Platform</h2>
+
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link" href="/Admin/History">View History Order</a>
+        </li>
+    </ul>
+    <ul class="nav flex-column">
+        <li class="nav-item">
+            <a class="nav-link" href="/Admin/AddProduct">Add Product</a>
+        </li>
+    </ul>
+
+    <br />
+    <br />
+    <br />
+    <div style="overflow-y: scroll; overflow-x: hidden; height: 400px;">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Manufactured</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>
+                        <a href="/Admin/Update" class="btn btn-info">UPDATE</a>
+                        <button type="submit" class="btn btn-danger">REMOVE</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>
+                        <a href="/Admin/Update" class="btn btn-info">UPDATE</a>
+                        <button type="submit" class="btn btn-danger">REMOVE</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
